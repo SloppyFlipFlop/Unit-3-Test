@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="David Nevarez">
+    <meta name="Description" content="Here you can take a quick survey and quiz!!">
+
+    <meta property="og.image" content="MyCustomFavicon.png">
+    <meta property="og.title" content="O mighty T">
+    <meta property="og.description" content="Just a mighty T">
+
+    <title>HomePage</title>
+
+    <link rel="stylesheet" href="survey.html">
+    <link rel="stylesheet" href="quiz.html>
+
+    <link rel=" shortcut icon" href="images/MyCustomFavicon.png" type="image/x-icon">
+
+    <style>
+        Body {
+            Background-image: url(images/lightBackground.png);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <nav>
+                <!--Add a menu for legal Reasons-->
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <!--Add a sreach bar-->
+                </ul>
+            </nav>
+        </fieldset>
+    </form>
+
+    <header>
+        <h1>Welcome to my site!</h1>
+    </header>
+
+    <main>
+        <p>
+            <em>
+                On this site you can take our short quiz and then you can fill out our survey.
+            </em>
+
+            <br>
+            <br>
+
+            <strong>
+                Only way that we can get better is by hearing what you have to say!
+            </strong>
+
+            <br>
+            <br>
+
+            <strong>
+                Log in below
+            </strong>
+        </p>
+    </main>
+
+    <form>
+        <fieldset>
+            <legend>User information</legend>
+            <ul>
+                <li>
+                    <label for="name">User Name</label>
+                    <input type="text" id="name" name="user.name">
+                </li>
+
+                <li>
+                    <label for="PW">Password</label>
+                    <input type="text" id="PW" name="user.password">
+                </li>
+
+                <li>
+                    <label for="idnumber">User identification Number</label>
+                    <input type="text" id="idnumber" name="user.idnumber">
+                </li>
+
+                <li>
+                    <label for="date">Today's Date</label>
+                    <input type="text" id="date" name="user.logindate">
+                </li>
+            </ul>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

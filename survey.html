@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="David Nevarez">
+    <meta name="Description" content="A simple survey that will allow our company to inprove.">
+
+    <meta property="og.image" content="MyCustomFavicon.png">
+    <meta property="og.title" content="O mighty T">
+    <meta property="og.description" content="Just a mighty T">
+
+    <title>Survey</title>
+
+    <link rel="shortcut icon" href="images/MyCustomFavicon.png" type="image/x-icon">
+
+    <style>
+        Body {
+            Background-image: url(images/lightBackground.png);
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <nav>
+                <!--Add a menu for legal Reasons-->
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <!--Add a sreach bar-->
+                </ul>
+            </nav>
+        </fieldset>
+    </form>
+
+    <header>
+        <h1>
+            Thank You!
+        </h1>
+    </header>
+
+    <main>
+        <p>
+            We appriciate you visting our site.
+            <em>
+                Without users like you we could not continue.
+            </em>
+        </p>
+
+        <br>
+
+        <p>
+            <strong>
+                PLEASE
+            </strong>
+            take a minute to fill out this survey and tell us how we can become better.
+        </p>
+    </main>
+
+    <form>
+        <fieldset>
+            <legend>Survey</legend>
+            <ul>
+                <li>
+                    <label for="realname">Name</label>
+                    <input type="text" id="realname" name="user.realname">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="user.email">
+                </li>
+                <li>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" id="phoneNumber" name="user.phonenumber">
+                </li>
+                <li>
+                    <label for="AnyImprovements">Please tell us anything that we can improve on</label>
+                </li>
+                <li>
+                    <textarea name="user.improvements" id="AnyImprovements" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

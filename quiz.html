@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="David Nevarez">
+    <meta name="Description" content="A simple quiz that will allow our company to inprove.">
+
+    <meta property="og.image" content="MyCustomFavicon.png">
+    <meta property="og.title" content="O mighty T">
+    <meta property="og.description" content="Just a mighty T">
+
+    <title>Trivia Night</title>
+
+    <link rel="shortcut icon" href="images/MyCustomFavicon.png" type="image/x-icon">
+
+    <style>
+        Body {
+            Background-image: url(images/lightBackground.png);
+        }
+    </style>
+</head>
+
+
+<body>
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>Links to other pages</legend>
+            <nav>
+                <!--Add a menu for legal Reasons-->
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <!--Add a sreach bar-->
+                </ul>
+            </nav>
+        </fieldset>
+    </form>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Multiple Choice</legend>
+                <p>
+                    What is the <em>scientific</em> name of H<sub>2</sub>O
+
+                <ul>
+                    <li>
+                        <label for="air">
+                            <input type="radio" id="air" name="user.answerone">Air</label>
+                    </li>
+
+                    <li>
+                        <label for="fire">
+                            <input type="radio" id="fire" name="user.answerone">Fire</label>
+                    </li>
+
+                    <li>
+                        <label for="earth">
+                            <input type="radio" id="earth" name="user.answerone">Earth</label>
+                    </li>
+
+                    <li>
+                        <label for="water">
+                            <input type="radio" id="water" name="user.answerone">Water</label>
+                    </li>
+                </ul>
+                </p>
+
+                <p>
+                    What is the <em>most popular</em> name for Dec.25 <sup>th</sup>
+
+                <ul>
+                    <li>
+                        <label for="christmas">
+                            <input type="radio" id="christmas" name="user.answertwo">Christmas</label>
+                    </li>
+
+                    <li>
+                        <label for="thanksgiving">
+                            <input type="radio" id="thanksgiving" name="user.answertwo">Christmas</label>
+                    </li>
+
+                    <li>
+                        <label for="valentine's">
+                            <input type="radio" id="valentine's" name="user.answertwo">Valentine's Day</label>
+                    </li>
+
+                    <li>
+                        <label for="halloween">
+                            <input type="radio" id="halloween" name="user.answertwo">Halloween</label>
+                    </li>
+                </ul>
+                </p>
+
+                <p>
+                    Which of the following of the chemical code's is <strong>sugar?</strong>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" id="sugarcodeone" name="user.answerthree">
+                        <label for="sugarcodeone">C<sub>12</sub>H<sub>22</sub>O<sub>11</sub></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="sugarcodetwo" name="user.answerthree">
+                        <label for="sugarcodetwo">C<sub>5</sub>H<sub>10</sub>O<sub>5</sub></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="sugarcodethree" name="user.answerthree">
+                        <label for="sugarcodethree">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="sugarcodefour" name="user.answerthree">
+                        <label for="sugarcodefour">C<sub>11</sub>H<sub>22</sub>O<sub>11</sub></label>
+                    </li>
+                </ul>
+                </p>
+
+                <p>
+                    Which of the following are <strong>even?</strong>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" id="eveneone" name="user.answerfour">
+                        <label for="eveneone">1<sup>st</sup></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="eventwo" name="user.answerfour">
+                        <label for="evenetwo">2<sup>nd</sup></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="eventhree" name="user.answerfour">
+                        <label for="evenethree">3<sup>rd</sup></label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="evenfour" name="user.answerfour">
+                        <label for="evenfour">4<sup>th</sup></label>
+                    </li>
+                </ul>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>
