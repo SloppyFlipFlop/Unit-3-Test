@@ -24,33 +24,26 @@
 
 
 <body>
-    <form>
-        <fieldset>
-            <legend>Links to other pages</legend>
-            <nav>
-                <!--Add a menu for legal Reasons-->
+    <nav>
+        <form>
+            <fieldset>
+                <legend>Links to other pages</legend>
                 <ul>
                     <li><a href="index.html">Home Page</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a href="survey.html">Survey</a></li>
-                    <!--Add a sreach bar-->
                 </ul>
-            </nav>
-        </fieldset>
-    </form>
+            </fieldset>
+        </form>
+    </nav>
 
     <header>
-        <h1>
-            Thank You!
-        </h1>
+        <h1>Thank You!</h1>
     </header>
 
     <main>
         <p>
-            We appriciate you visting our site.
-            <em>
-                Without users like you we could not continue.
-            </em>
+            We appriciate you visting our site.<em> Without users like you we could not continue.</em>
         </p>
 
         <br>
@@ -58,38 +51,37 @@
         <p>
             <strong>PLEASE</strong> take a minute to fill out this survey and tell us how we can become better.
         </p>
+
+        <form>
+            <fieldset>
+                <legend>Survey</legend>
+                <ul>
+                    <li>
+                        <label for="realname">Name</label>
+                        <input type="text" id="realname" name="user.realname">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="user.email">
+                    </li>
+                    <li>
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber" name="user.phonenumber">
+                    </li>
+                    <li>
+                        <label for="AnyImprovements">Please tell us anything that we can improve on</label>
+                    </li>
+                    <li>
+                        <textarea name="user.improvements" id="AnyImprovements" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
     </main>
-
-    <form action="data.json" method="POST">
-        <fieldset>
-            <legend>Survey</legend>
-            <ul>
-                <li>
-                    <label for="realname">Name</label>
-                    <input type="text" id="realname" name="user.realname">
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="user.email">
-                </li>
-                <li>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" id="phoneNumber" name="user.phonenumber">
-                </li>
-                <li>
-                    <label for="AnyImprovements">Please tell us anything that we can improve on</label>
-                </li>
-                <li>
-                    <textarea name="user.improvements" id="AnyImprovements" cols="30" rows="10"></textarea>
-                </li>
-            </ul>
-
-            <p>
-                <button type="submit">Submit</button>
-            </p>
-        </fieldset>
-    </form>
-
 </body>
 
 </html>
